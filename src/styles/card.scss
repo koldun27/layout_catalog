@@ -4,7 +4,8 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: $card-gap;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 40px;
   max-width: $width;
 
   @media (min-width: 488px) {
@@ -32,6 +33,7 @@
   border-radius: 5px;
   border: 1px solid $border-color;
   background-color: $white-color;
+  transition-duration: 300ms;
 
   &__image {
     width: 160px;
@@ -141,5 +143,12 @@
   &__button:hover {
     background-color: $border-color;
     color: $bg-color;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    & > .card__product-name {
+      color: #00acdc;
+    }
   }
 }
