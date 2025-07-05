@@ -4,22 +4,22 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: $card-gap;
-  margin: 50 auto;
+  margin: 50px auto;
   max-width: $width;
 
   @media (min-width: 488px) {
     grid-template-columns: repeat(2, 1fr);
-    max-width: $width * 2 + $card-culumn-gap;
+    max-width: $width * 2 + $card-column-gap;
   }
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    max-width: $width * 3 + $card-culumn-gap * 2;
+    max-width: $width * 3 + $card-column-gap * 2;
   }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
-    max-width: $width * 4 + $card-culumn-gap * 3;
+    max-width: $width * 4 + $card-column-gap * 3;
   }
 }
 
